@@ -1,0 +1,38 @@
+#ifndef BOOK_H
+#define BOOK_H
+#include <string>
+
+
+class Book
+{
+    private:
+        std::string* author;
+        std::string* title;
+        std::string* publisher;
+        float* price;
+        std::string* stockPos;
+        float* rate = new float(0);
+        int* rateCounter= new int(0);
+
+
+    public:
+        Book();
+        Book(std::string a,std::string t,std::string p,float pri,std::string s_p);
+        std::string getAuthor();
+        std::string getTitle();
+        std::string getPublisher();
+        float getPrice();
+        std::string getStockPos();
+        float getRate();
+        int getRateCounter();
+        void setAuthor(std::string a);
+        void setTitle(std::string t);
+        void setPublisher(std::string p);
+        void setPrice(float pri);
+        void setStockPos(std::string s_p);
+        void setRate(float r);
+        void setRateCounter(int r_c);
+        virtual ~Book();
+};
+
+#endif // BOOK_H
