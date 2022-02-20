@@ -1,0 +1,64 @@
+#include "Book.h"
+
+Book::Book()
+{
+    author= new std::string("");
+    title = new std::string("");
+    publisher = new std::string("");
+    price = new float(0.0);
+    stockPos = new std::string("");
+
+}
+Book::Book(std::string a,std::string t,std::string p,float pri,std::string s_p){
+author=new std::string(a);
+title=new std::string(t);
+publisher=new std::string(p);
+price=new float(pri);
+stockPos=new std::string(s_p);
+}
+        std::string Book::getAuthor(){
+        return *author;
+        }
+        std::string Book::getTitle(){
+        return *title;
+        }
+        std::string Book::getPublisher(){
+        return *publisher;
+        }
+        float Book::getPrice(){
+        return *price;
+        }
+        std::string Book::getStockPos(){
+        return *stockPos;
+        }
+        float Book::getRate(){
+        return *rate;
+        }
+        int Book::getRateCounter(){
+        return* rateCounter;
+        }
+        void Book::setAuthor(std::string a){
+        *author=a;
+        }
+        void Book::setTitle(std::string t){
+        *title=t;
+        }
+        void Book::setPublisher(std::string p){
+        *publisher=p;
+        }
+        void Book::setPrice(float pri){
+        *price=pri;
+        }
+        void Book::setRate(float r){
+        *rate=r;
+        }
+        void Book::setStockPos(std::string s_p){
+        *stockPos=s_p;
+        }
+        void Book::setRateCounter(int r_c){
+        *rateCounter=r_c;
+        }
+Book::~Book()
+{
+    //dtor
+}
