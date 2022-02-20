@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1645291861 source:e:\others\programming course\project oop\book store\src\book.cpp
+	"Book.h"
+
+1645291851 e:\others\programming course\project oop\book store\include\book.h
+	<string>
+
+1644954257 source:e:\others\programming course\project oop\book store\src\store.cpp
+	"Store.h"
+
+1644955285 e:\others\programming course\project oop\book store\include\store.h
+	"Book.h"
+
+1645300201 source:e:\others\programming course\project oop\book store\main.cpp
+	<iostream>
+	"Book.h"
+	"Store.h"
+	<string>
+
